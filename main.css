@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+/* nav */
+.nav{
+    background: #000000 ;
+    color:#EEEEEE;
+    text-align: center;
+
+}
+.nav-heading{
+    font-size: 60px;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+/* end of nav */
+
+/* search */
+
+.searchBox {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
+
+
+/* end of search */
+
+/* Card deisgn */
+.anime-cards{
+    box-shadow: 5px 5px 10px #474747;
+    width:70vw;
+    margin:40px auto;
+    margin-top:0px;
+    border:none;
+    border-radius:12px;
+    background: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.single-card{
+    width:300px;
+    margin:20px;
+    
+    background: #E8E8E8;
+   text-align: center;
+   border:1px solid red;
+   transition: all 1s ease;
+   border-radius: 12px;
+   margin-bottom:20px;
+   
+   
+}
+.single-card-image{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width:100%;
+    height:300px;
+    margin-bottom: 20px;
+}
+.single-card-title{
+    margin-bottom: 20px;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+
+}
+.single-card-desc{
+    text-align: left;
+    padding:10px 20px;
+    letter-spacing: 0.05rem;
+    font-weight:light;
+    line-height: 1.5;
+}
+.single-card-common{
+    text-align: left;
+    padding:10px 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+.single-card-start-date{
+    color: blue;
+    font-weight: lighter;
+}
+.single-card-end-date{
+    color: red;
+    font-weight: lighter;
+}
+.single-card-score{
+    color: green;
+    font-weight: lighter;
+}
+.single-card-type{
+    color: #172a3a;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.single-card:hover{
+    background: #fff;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px #474747;
+}
+
+
+@media screen and (max-width:900px){
+    .anime-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* end of card design */
+
+/* Types select items */
+
+.dropDownDiv{
+    box-shadow: 5px 5px 10px #474747;
+    width:70vw;
+    margin:40px auto;
+    margin-bottom: 1px;
+    margin-top:200px;
+    border:none;
+    border-radius:12px;
+    background: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:10px;
+    box-sizing: border-box;
+    display: none;
+    
+}
+#type-select{
+    border-radius: 12px;
+    padding:5px;
+    width:80%;
+}
+
+
+.showDropDownDiv{
+    display: flex;
+}
+/* end of type items */
